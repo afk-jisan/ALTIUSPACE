@@ -1,0 +1,65 @@
+import { NavLink } from "react-router-dom";
+import Navbar from "./Navbar";
+function Hero() {
+  return (
+    <div className=" bg-[#1A1A1A] h-[870px] relative overflow-hidden">
+
+      <div className='bg-[#1A1A1A] py-5 px-20'>
+        <Navbar/>
+        
+      </div>
+      <img
+        src=""
+        alt=""
+        className="pointer-events-none absolute w-[384px] h-[384px] blur-3xl top-[100px] -translate-x-1/2 rounded-full bg-gradient-to-r from-[#302948] to-[#1991EB] opacity-40 "
+      />
+
+      <img
+        src="/rectangleBlur.svg"
+        alt=""
+        className="pointer-events-none absolute w-[256px] h-[256px]  blur-[20px] top-[100px] right-0 -translate-x-[-50%] rounded-full bg-gradient-to-r from-[#302948] to-[#26283E]"
+      />
+
+      <img
+        src="/rectangleBlur.svg"
+        alt=""
+        className="pointer-events-none absolute w-[380px] h-[412px] blur-[14px] top-[65%] left-1/2 -translate-x-[90%] -translate-y-1/2"
+      />
+      
+      <div>
+      <div className="flex flex-col justify-center items-center">
+        <h1 className="mt-8 mb-10 text-[14px] font-medium px-4 py-3 text-[#AAABB5] rounded-full border border-white/20 shadow-[0_8px_32px_rgba(31,38,135,0.37)] bg-gradient-to-b from-[rgba(47,49,69,1)] to-[rgba(40,43,74,1)]">
+          Pioneers in SaaS Product Innovation
+        </h1>
+        <p className="text-white text-[72px] font-bold leading-18">We Create SaaS
+          <br/><span className="bg-gradient-to-r from-[#9F83FF] to-[#47A7EF] bg-clip-text text-transparent text-[72px] font-bold">That Sells Itself</span>
+        </p>
+        <p className="mt-10 text-[rgba(101,101,101,100)] text-[18px] font-normal">We partner with visionary SaaS founders to architect go-to-market strategies<br/>that scale. From technical sales engineering to revenue acceleration.</p>
+      </div>
+
+      <div className="flex flex-row justify-center items-center flex-wrap gap-3 my-20"> 
+        <div className="flex flex-row justify-center items-center gap-2 bg-gradient-to-tl from-[#1991EB] to-[#8764FF] h-[76px] w-[260px] rounded-[16px] cursor-pointer transform hover:scale-105 transition-transform duration-200">
+          <NavLink to="/projects" className="text-white font-semibold">Launch My SaaS</NavLink>
+          <img src="./arrowFrame.svg"></img>
+        </div>
+        <NavLink to="/projects" className="font-medium text-white h-[76px] w-[203px] flex justify-center items-center bg-gradient-to-b from-[rgba(47,49,69,1)] to-[rgba(40,43,74,1)] rounded-[16px] transform hover:scale-105 transition-transform duration-200"><span>View Our Projects</span></NavLink>
+      </div>
+      
+    </div>
+    </div>
+  );
+}
+
+export default Hero;
+
+/*
+<div className="flex justify-center items-center bg-[#1A1A1A]">
+  <h1 className="text-[14px] font-medium  bg-gradient-to-br from-[#6A70A1] to-[#27293B]">Pioneers in SaaS Product Innovation</h1>
+</div>
+
+
+opacity-50 add in the blur
+top-10 left-1/2 -translate-x-1/2
+
+blurry img's are breaking responsiveness
+*/
