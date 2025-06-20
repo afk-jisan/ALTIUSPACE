@@ -2,29 +2,19 @@
 @import "tailwindcss";
 
 /* :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-*/
-
-#root {
+root {
   max-width: 1200px;
   margin: 0 auto;
-  border: 2px solid; /* keeping it for now to make things easy. must remove before prod */
+  border: 2px solid; // keeping it for now to make things easy. must remove before prod 
 } 
+*/
+
+
 
 @theme {
   --font-pattaya: "Pattaya", cursive; /* 'cursive' is a good fallback for Pattaya */
   /* You can also override the default sans, serif, or mono fonts: */
   /* --font-sans: "Pattaya", sans-serif; */
+  --breakpoint-lgc: 950px;
+  --breakpoint-smc: 683px;
 }

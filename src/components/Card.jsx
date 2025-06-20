@@ -15,7 +15,7 @@ export default function Card( { title, description, src, subtitle, color, i, pro
     const { isMd } = useBreakpoint();
 
     return (
-        <div ref={container} className="h-[100vh] flex justify-center items-center sticky top-0">
+        <div ref={container} className="h-[100vh] flex justify-center items-center sticky top-0 xl:w-[1200px]">
             <motion.div style={{scale, backgroundColor: color, top: `calc(-10% + ${i * 35}px)`, left: isMd ? `calc(-1% + ${i * 40}px)` : 0, width: isMd ? '75%' : '90%' }} className= "h-fit sm:h-[466px] relative top-[-10%] rounded-[35px] ">
                 <div className="flex flex-col sm:flex-row justify-center items-center">
                     <div className="sm:w-[50%] h-[350px] sm:h-[466px] p-10 ">

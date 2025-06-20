@@ -1,29 +1,30 @@
 import { NavLink } from "react-router-dom";
 import Navbar from "./Navbar";
+import { Link } from 'react-scroll';
 function Hero() {
   return (
-    <div className=" bg-[#1A1A1A] h-[870px] relative overflow-hidden">
+    <div className=" bg-[#1A1A1A] h-fit pl-5 pr-5 sm:pl-0  sm:h-[870px] relative overflow-hidden">
 
-      <div className='bg-[#1A1A1A] py-5 px-20'>
-        <Navbar/>
-        
+      <div className='bg-[#1A1A1A] py-5 sm:px-8 md:px-30 lgc:px-20 xl:px-50'>
+        <Navbar/> 
       </div>
+
       <img
         src=""
         alt=""
-        className="pointer-events-none absolute w-[384px] h-[384px] blur-3xl top-[100px] -translate-x-1/2 rounded-full bg-gradient-to-r from-[#302948] to-[#1991EB] opacity-40 "
+        className="pointer-events-none absolute w-[384px] h-[384px] blur-[35px] top-[60px] -translate-x-1/2 rounded-full bg-[linear-gradient(135deg,#1991EB,#8764FF)] opacity-30 "
       />
 
       <img
-        src="/rectangleBlur.svg"
+        src=""
         alt=""
-        className="pointer-events-none absolute w-[256px] h-[256px]  blur-[20px] top-[100px] right-0 -translate-x-[-50%] rounded-full bg-gradient-to-r from-[#302948] to-[#26283E]"
+        className="pointer-events-none absolute w-[256px] h-[256px]  blur-[35px] top-[100px] right-0 -translate-x-[-50%] rounded-full bg-[linear-gradient(-135deg,#1991EB,#8764FF)] opacity-30"
       />
 
       <img
-        src="/rectangleBlur.svg"
+        src=""
         alt=""
-        className="pointer-events-none absolute w-[380px] h-[412px] blur-[14px] top-[65%] left-1/2 -translate-x-[90%] -translate-y-1/2"
+        className="pointer-events-none absolute w-[380px] h-[300px] blur-[50px] top-[65%] left-1/2 -translate-x-[90%]  rounded-full bg-[linear-gradient(-135deg,#1991EB,#8764FF)] opacity-30 -translate-y-1/2"
       />
       
       <div>
@@ -39,10 +40,10 @@ function Hero() {
 
       <div className="flex flex-row justify-center items-center flex-wrap gap-3 my-20"> 
         <div className="flex flex-row justify-center items-center gap-2 bg-gradient-to-tl from-[#1991EB] to-[#8764FF] h-[76px] w-[260px] rounded-[16px] cursor-pointer transform hover:scale-105 transition-transform duration-200">
-          <NavLink to="/projects" className="text-white font-semibold">Launch My SaaS</NavLink>
+          <Link to="contact" smooth={true} duration={3000} className="text-white font-semibold">Launch My SaaS</Link>
           <img src="./arrowFrame.svg"></img>
         </div>
-        <NavLink to="/projects" className="font-medium text-white h-[76px] w-[203px] flex justify-center items-center bg-gradient-to-b from-[rgba(47,49,69,1)] to-[rgba(40,43,74,1)] rounded-[16px] transform hover:scale-105 transition-transform duration-200"><span>View Our Projects</span></NavLink>
+        <Link to="projects" smooth={true} className="font-medium text-white h-[76px] w-[203px] flex justify-center items-center bg-gradient-to-b from-[rgba(47,49,69,1)] to-[rgba(40,43,74,1)] rounded-[16px] transform hover:scale-105 transition-transform duration-200"><span>View Our Projects</span></Link>
       </div>
       
     </div>
