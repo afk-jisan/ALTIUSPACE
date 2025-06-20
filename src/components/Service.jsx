@@ -1,6 +1,6 @@
 const Service = () => {
     return (
-        <div className="border-5 bg-[#1A1A1A] rounded-[73px] py-20">
+        <div id='service' className="border-5 bg-[#1A1A1A] rounded-[73px] py-20">
             <p className="px-20 text-[48px] text-center font-bold bg-gradient-to-r from-[#9F83FF] to-[#9F83FF] bg-clip-text text-transparent">We craft brand <span className="font-pattaya font-normal">identities</span> that don't just speak they <span className="font-pattaya font-normal">captivate.</span></p>
             
             {/* part - 1 */}

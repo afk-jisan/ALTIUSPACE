@@ -4,7 +4,7 @@ import { motion, useScroll } from "framer-motion"
 import { useRef } from "react";
 
 
-export default function Project() {
+const Project = () => {
  const container = useRef(null);
  const { scrollYProgress } = useScroll({
   target: container,
@@ -12,7 +12,7 @@ export default function Project() {
  })
 
   return (
-    <div className="bg-[#1A1A1A] mb-50">
+    <div id='projects' className="bg-[#1A1A1A] mb-50">
       <div className="bg-white flex flex-col justify-between items-center rounded-t-[130px] pt-20">
         <p className="px-5 text-[48px] font-extrabold bg-gradient-to-r from-[#9F83FF] to-[#47A7EF] bg-clip-text text-transparent text-center">Making <span className="font-pattaya font-normal">waves</span> across all <span className="font-pattaya font-normal">industries</span></p>
         <p className="px-5 text-[28px] text-[rgba(0,0,0,0.37)] pt-[50px] text-center">Every engagement is crafted with surgical precision to deliver measurable results that transform your SaaS business.</p>
@@ -34,3 +34,5 @@ export default function Project() {
     </div>
   );
 }
+
+export default Project;
