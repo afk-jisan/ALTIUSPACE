@@ -3,7 +3,8 @@ import { NavLink } from "react-router-dom";
 import Form from "../components/Form";
 function Contact() {
   return (
-    <div id='contact' className="flex flex-col justify-center items-center bg-[rgba(26,26,26,1)] rounded-t-[73px] p-5 sm:p-15 pt-30">
+    <div id='contact' className="bg-[rgba(26,26,26,1)] pt-20">
+    <div className="flex flex-col justify-center items-center bg-[rgba(26,26,26,1)] rounded-t-[73px] p-5 sm:p-15 custom:w-[1200px] mx-auto">
       <div className="">
         <h1 className="text-[30px] font-[700px] text-white text-center pb-5">Ready to Transform Your SaaS?</h1>
         <p className="text-[rgba(218,220,224,1)] text-[20px] text-center mb-10">Join the elite group of SaaS founders who have unlocked exponential growth <br/> with our precision-engineered strategies.</p>
@@ -47,6 +48,7 @@ function Contact() {
         </div>
       </div>
       
+    </div>
     </div>
   );
 }

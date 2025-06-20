@@ -1,6 +1,6 @@
 const Pricing = () => {
     return(
-        <div id='pricing' className="h-screen"></div>
+        <div id='pricing' className="h-screen bg-white"></div>
     )
 }
 

@@ -1,10 +1,11 @@
 const Service = () => {
     return (
-        <div id='service' className="border-5 bg-[#1A1A1A] rounded-[73px] py-20 smc:px-20 xl:px-50">
+        <div id='service' className="bg-[#1A1A1A]">
+        <div className="bg-[#1A1A1A] rounded-[30px] sm:rounded-[73px] py-30 smc:px-20  custom:w-[1200px] mx-auto">
             <p className="px-5 sm:px-30 text-[48px] sm:text-[48px] text-center font-bold bg-gradient-to-r from-[#9F83FF] to-[#9F83FF] bg-clip-text text-transparent">We craft brand <span className="font-pattaya font-normal">identities</span> that don't just speak they <span className="font-pattaya font-normal">captivate.</span></p>
             
             {/* part - 1 */}
-            <div className="flex flex-col sm:flex-row items-center gap-20 py-20">
+            <div className="flex flex-col sm:flex-row items-center gap-30 py-20">
                 <div>
                     <div className="relative w-[200px] h-[200px]">
                         <img src="" className="absolute top-0 left-0 w-[200px] h-[200px] rounded-lg bg-[#E38181]"></img>
@@ -18,7 +19,7 @@ const Service = () => {
             </div>
 
             {/* part - 2 */}
-            <div className="flex flex-col sm:flex-row items-center gap-20 py-20">
+            <div className="flex flex-col sm:flex-row items-center gap-30 py-20">
                 <div>
                     <div className="relative w-[200px] h-[200px]">
                         <img src="" className="absolute top-0 left-0 w-[200px] h-[200px] rounded-lg bg-[#B781E3]"></img>
@@ -33,7 +34,7 @@ const Service = () => {
 
 
             {/* part - 3 */}
-            <div className="flex flex-col sm:flex-row items-center gap-20 py-20">
+            <div className="flex flex-col sm:flex-row items-center gap-30 py-20">
                 <div>
                     <div className="relative w-[200px] h-[200px]">
                         <img src="" className="absolute top-0 left-0 w-[200px] h-[200px] rounded-lg bg-[#CEE381]"></img>
@@ -46,6 +47,7 @@ const Service = () => {
                 </div>
             </div>
 
+        </div>
         </div>
     )
 }
