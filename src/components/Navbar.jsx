@@ -50,10 +50,14 @@ function Navbar() {
             <Link to="contact" duration={1000} smooth={true} className="hover:text-blue-400 font-light transition-colors duration-200 cursor-pointer">Contact</Link>
           </li>
         </ul>
+        <div className='flex flex-row gap-5'>
+        
 
-        <Link to="contact" smooth={true} duration={1000} className="px-8 py-4 rounded-[26px] text-white font-medium bg-gradient-to-tl from-[#1991EB] to-[#8764FF] shadow-inner transform hover:scale-105 transition-transform duration-200 cursor-pointer">
+        <Link to="contact" smooth={true} duration={1000} className="hidden sm:block px-8 py-4 rounded-[26px] text-white font-medium bg-gradient-to-tl from-[#1991EB] to-[#8764FF] shadow-inner transform hover:scale-105 transition-transform duration-200 cursor-pointer">
           Get Started
         </Link>
+        <img className='lgc:hidden flex cursor-pointer ' src='./iconsax-align-left-2.svg'></img>
+      </div>
       </div>
     </nav>
   );
