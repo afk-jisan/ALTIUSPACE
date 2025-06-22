@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 import { Link } from 'react-scroll';
 function Hero() {
   return (
-    <div id="hero" className=" bg-[#1A1A1A] pl-5 pr-5 sm:pl-0 sm:h-screen relative overflow-hidden">
+    <div id="hero" className=" bg-[#1A1A1A] pl-5 pr-5 sm:pl-0 sm:h-screen relative overflow-hidden mt-15">
 
       
 
@@ -41,7 +41,7 @@ function Hero() {
           <Link to="contact" smooth={true} duration={3000} className="text-white font-semibold flex flex-row justify-center items-center gap-2 bg-gradient-to-tl from-[#1991EB] to-[#8764FF] h-[76px] w-[260px] rounded-[16px] cursor-pointer transform hover:scale-105 transition-transform duration-200">Launch My SaaS<img src="./arrowFrame.svg"></img></Link>
 
        
-        <Link to="projects" smooth={true} className="font-medium text-white h-[76px] w-[203px] flex justify-center items-center bg-gradient-to-b from-[rgba(47,49,69,1)] to-[rgba(40,43,74,1)] rounded-[16px] transform hover:scale-105 transition-transform duration-200"><span>View Our Projects</span></Link>
+        <NavLink to="/projects" smooth={true} className="font-medium text-white h-[76px] w-[203px] flex justify-center items-center bg-gradient-to-b from-[rgba(47,49,69,1)] to-[rgba(40,43,74,1)] rounded-[16px] transform hover:scale-105 transition-transform duration-200"><span>View Our Projects</span></NavLink>
       </div>
       
     </div>
