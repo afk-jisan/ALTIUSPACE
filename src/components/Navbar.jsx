@@ -3,7 +3,7 @@ import { Link } from 'react-scroll';
 
 function Navbar() {
   return (
-    <nav className="navbar-container fixed top-6 left-1/2 -translate-x-1/2 w-[1049px] h-[82px] z-50 rounded-full px-5 lgc:px-10 py-2 flex items-center justify-between pointer-events-none overflow-hidden">
+    <nav className="navbar-container fixed top-6 left-1/2 -translate-x-1/2 nav:w-[1049px] w-[90vw] h-[82px] z-50 rounded-full px-5 lgc:px-10 py-2 flex items-center justify-between pointer-events-none overflow-hidden">
 
       {/* SVG Filter */}
       <svg style={{ position: 'absolute', width: 0, height: 0 }}>
@@ -29,7 +29,7 @@ function Navbar() {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10 w-full flex justify-between items-center pointer-events-auto bg-transparent">
+      <div className="relative z-10 w-full flex justify-between gap-5 items-center pointer-events-auto bg-transparent">
         {/* Logo/Brand */}
         <Link to="hero" duration={1000} smooth={true} className="mb-1 cursor-pointer">
           <span className="text-3xl lgc:text-3xl font-extrabold bg-gradient-to-r from-[#9F83FF] to-[#47A7EF] bg-clip-text text-transparent">ALTIUSPACE</span>

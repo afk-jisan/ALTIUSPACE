@@ -17,6 +17,7 @@
   /* --font-sans: "Pattaya", sans-serif; */
   --breakpoint-lgc: 950px;
   --breakpoint-smc: 683px;
+  --breakpoint-nav: 1049px;
   --breakpoint-custom: 1200px;
 }
 

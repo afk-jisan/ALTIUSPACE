@@ -1,8 +1,9 @@
 import SearchNFilters from "../components/SearchNFilters";
 import CardModule from "../components/CardModule";
+import { Link } from "react-router-dom";
 const AllProjects = () => {
   return (
-    <div className="bg-[#1A1A1A] pt-10 w-[1200px] mx-auto">
+    <div className="bg-[#1A1A1A] py-20 w-[1200px] mx-auto">
       {/* part - 1 */}
       <div className="flex flex-col">
         <div className="flex flex-col justify-center items-center">
@@ -14,7 +15,7 @@ const AllProjects = () => {
             project represents innovation, technical excellence, and measurable
             business impact.
           </p>
-          <div className="flex flex-row  gap-4">
+          <div className="flex flex-row gap-8">
             <div className="flex flex-row  gap-2">
               <img src="./tick.svg"></img>
               <p className="text-white">6 Completed Projects</p>
@@ -44,7 +45,7 @@ const AllProjects = () => {
           <img src="./star.svg"></img>
           <p className="text-white">Featured Projects</p>
         </div>
-        <div className="grid grid-cols-3 mb-10 justify-center items-center ml-10">
+        <div className="grid grid-cols-3 mb-10 justify-center items-start ml-10">
           <CardModule
             title="ZenFlow Analytics"
             category="Analytics"
@@ -55,7 +56,7 @@ const AllProjects = () => {
             stat2Label="Users"
             stat3Value="4.9"
             stat3Label="Rating"
-            heightClass="h-[557px]"
+            heightClass="h-[532px]"
             imageHeightClass="h-32"
           ></CardModule>
           <CardModule
@@ -68,7 +69,7 @@ const AllProjects = () => {
             stat2Label="Users"
             stat3Value="4.8"
             stat3Label="Rating"
-            heightClass="h-[557px]"
+            heightClass="h-[532px]"
             imageHeightClass="h-[144px]" // Adjust image height proportionally or as needed
           ></CardModule>
 
@@ -94,7 +95,7 @@ const AllProjects = () => {
           <p className="text-white">All Projects</p>
           <p className="text-white">(6)</p>
         </div>
-        <div className="grid grid-cols-3 mb-10 justify-center items-center ml-10">
+        <div className="grid grid-cols-3 mb-10 justify-center items-start ml-10">
           <CardModule
             title="ZenFlow Analytics"
             category="Analytics"
@@ -105,7 +106,7 @@ const AllProjects = () => {
             stat2Label="Users"
             stat3Value="4.9"
             stat3Label="Rating"
-            heightClass="h-[557px]"
+            heightClass="h-[532px]"
             imageHeightClass="h-32"
           ></CardModule>
           <CardModule
@@ -118,7 +119,7 @@ const AllProjects = () => {
             stat2Label="Users"
             stat3Value="4.8"
             stat3Label="Rating"
-            heightClass="h-[557px]"
+            heightClass="h-[532px]"
             imageHeightClass="h-[144px]" // Adjust image height proportionally or as needed
           ></CardModule>
 
@@ -142,7 +143,7 @@ const AllProjects = () => {
       {/* part - 4 */}
       <div className=" ">
         
-        <div className="grid grid-cols-3 mb-10 justify-center items-center ml-10">
+        <div className="grid grid-cols-3 mb-10 justify-center items-start ml-10">
           <CardModule
             title="ZenFlow Analytics"
             category="Analytics"
@@ -153,7 +154,7 @@ const AllProjects = () => {
             stat2Label="Users"
             stat3Value="4.9"
             stat3Label="Rating"
-            heightClass="h-[557px]"
+            heightClass="h-[532px]"
             imageHeightClass="h-32"
           ></CardModule>
           <CardModule
@@ -166,7 +167,7 @@ const AllProjects = () => {
             stat2Label="Users"
             stat3Value="4.8"
             stat3Label="Rating"
-            heightClass="h-[557px]"
+            heightClass="h-[532px]"
             imageHeightClass="h-[144px]" // Adjust image height proportionally or as needed
           ></CardModule>
 
@@ -184,6 +185,15 @@ const AllProjects = () => {
             imageHeightClass="h-32"
           ></CardModule>
         </div>
+      </div>
+
+      {/* part - 5 */}
+      <div className="flex flex-col justify-center items-center mx-auto mt-30 gap-8 w-[896px] h-[283px] rounded-[24px] shadow-[0px_8px_32px_0px_#1F26875E] [background-image:linear-gradient(-32deg,_#282A43,_#222544)] backdrop-blur-xl border border-[#FFFFFF1A]">
+        <p className="text-white font-inter font-bold text-[30px] leading-[36px] tracking-[-0.75px] text-center">Ready to Start Your Project?</p>
+        <p className="text-white font-inter font-[300] text-[20px] leading-[28px] tracking-normal text-center">Let's discuss how we can help you achieve similar results with your SaaS product.</p>
+        <Link to="contact" smooth={true} duration={1000} className="px-8 py-4 rounded-[16px] text-white text-[18px] font-medium bg-gradient-to-tl from-[#1991EB] to-[#8764FF] hover:from-[#8764FF] hover:to-[#1991EB] shadow-inner transform hover:scale-105 transition-transform duration-200 cursor-pointer">
+          Get Started
+        </Link>
       </div>
     </div>
   );

@@ -1,10 +1,10 @@
 const CardModule = ( { title, category, description, stat1Value, stat1Label, stat2Value, stat2Label, stat3Value, stat3Label, heightClass, imageHeightClass}) => {
   return (
-    <div class={`mt-4 flex-grow flex flex-col w-[350px] ${heightClass} shadow-[0px_8px_32px_0px_#1F26875E] bg-[#232548] backdrop-blur-xl border border-[#FFFFFF1A] rounded-[24px] p-8`}>
+    <div class={`mt-4 flex-grow flex flex-col w-[350px] ${heightClass} shadow-[0px_8px_32px_0px_#1F26875E] [background-image:linear-gradient(-32deg,_#282A43,_#222544)] backdrop-blur-xl border border-[#FFFFFF1A] rounded-[24px] p-8`}>
       <div className="">
         <div className="w-[284px] h-[192px] bg-[#D9D9D9] mb-3"></div>
         <h3 class="text-white text-xl font-semibold -bg">{ title }</h3>
-        <p class="text-sm text-[#8a8aa8] mt-1">{ category }</p>
+        <p class="text-sm text-[rgba(159,131,255,1)] mt-1">{ category }</p>
         <p class="text-gray-300 text-sm mt-3 leading-relaxed">
           { description }
         </p>
@@ -12,20 +12,20 @@ const CardModule = ( { title, category, description, stat1Value, stat1Label, sta
 
 
       <div className="border border-[rgba(255,255,255,0.2)] mt-6"> </div>
-      <div class="flex justify-between items-center mt-3">
+      <div class="flex justify-around items-center mt-3">
         <div class="text-center">
-          <p class="text-blue-400 font-bold text-lg">{ stat1Value }</p>
-          <p class="text-gray-400 text-xs">{ stat1Label }</p>
+          <p class="text-[14px] bg-gradient-to-r from-[#9F83FF] to-[#47A7EF] bg-clip-text text-transparent font-bold text-lg">{ stat1Value }</p>
+          <p class="text-[12px text-white">{ stat1Label }</p>
         </div>
         <div class="text-center">
-          <p class="text-blue-400 font-bold text-lg">{ stat2Value }</p>
-          <p class="text-gray-400 text-xs">{ stat2Label }</p>
+          <p class="text-[14px] bg-gradient-to-r from-[#9F83FF] to-[#47A7EF] bg-clip-text text-transparent font-bold text-lg">{ stat2Value }</p>
+          <p class="text-[12px] text-white">{ stat2Label }</p>
         </div>
         <div class="text-center">
-          <p class="text-blue-400 font-bold text-lg">
-            { stat3Value } <span class="text-yellow-400">&#9733;</span>
+          <p class="text-[14px] font-normal text-white ">
+            { stat3Value } <span class="">&#9733;</span>
           </p>
-          <p class="text-gray-400 text-xs">{ stat3Label }</p>
+          <p class="text-[14px] font-normal text-white">{ stat3Label }</p>
         </div>
       </div>
     </div>
