@@ -1,14 +1,23 @@
-import React from 'react';
 import { Link } from 'react-scroll';
-
+import SideMenu from './SideMenu';
+import { useState } from 'react';
 function Navbar() {
+  const [isSideNavOpen, setIsSideNavOpen] = useState(false);
+
+  const toggleSideNav = () => {
+    setIsSideNavOpen(!isSideNavOpen)
+  }
+
   return (
+    <>
+    { isSideNavOpen && <SideMenu toggleSideNav={toggleSideNav} /> }
+    
     <nav className="navbar-container fixed top-6 left-1/2 -translate-x-1/2 nav:w-[1049px] w-[90vw] h-[82px] z-50 rounded-full px-5 lgc:px-10 py-2 flex items-center justify-between pointer-events-none overflow-hidden">
 
       {/* SVG Filter */}
       <svg style={{ position: 'absolute', width: 0, height: 0 }}>
         <filter id="blotty-filter">
-          <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="2" seed="0" result="turbulence">
+          <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="2" seed="10" result="turbulence">
             <animate attributeName="seed" from="0" to="100" dur="1s" repeatCount="" />
           </feTurbulence>
           <feDisplacementMap in2="turbulence" in="SourceGraphic" scale="12" xChannelSelector="R" yChannelSelector="G" />
@@ -22,7 +31,7 @@ function Navbar() {
             <div
               xmlns="http://www.w3.org/1999/xhtml"
               className="w-full h-full rounded-full"
-              style={{ filter: 'url(#blotty-filter)', backdropFilter: 'blur(3.5px)', backgroundColor: 'transparent', WebkitBackdropFilter: 'blur(3.5px)', maskImage: 'linear-gradient(white, white)', WebkitMaskImage: 'linear-gradient(white, white)' }}
+              style={{ filter: 'url(#blotty-filter)', backdropFilter: 'blur(2.5px)', backgroundColor: 'rgba(255,255,255,0.02)', WebkitBackdropFilter: 'blur(2.5px)' }}
             ></div>
           </foreignObject>
         </svg>
@@ -56,10 +65,11 @@ function Navbar() {
         <Link to="contact" smooth={true} duration={1000} className="hidden sm:block px-8 py-4 rounded-[26px] text-white font-medium bg-gradient-to-tl from-[#1991EB] to-[#8764FF] shadow-inner transform hover:scale-105 transition-transform duration-200 cursor-pointer">
           Get Started
         </Link>
-        <img className='lgc:hidden flex cursor-pointer ' src='./iconsax-align-left-2.svg'></img>
+        <img className='lgc:hidden flex cursor-pointer ' src='./iconsax-align-left-2.svg' onClick={toggleSideNav}></img>
       </div>
       </div>
     </nav>
+    </>
   );
 }
 

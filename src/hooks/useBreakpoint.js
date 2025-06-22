@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 const breakpoints = {
   sm: 640,
   md: 800,
+  lgc:950,
   lg: 1024,
   xl: 1280,
   '2xl': 1536,
@@ -25,6 +26,7 @@ export default function useBreakpoint() {
     isSm: isAbove('sm'),
     isMd: isAbove('md'),
     isLg: isAbove('lg'),
+    isLgc: isAbove('lgc'),
     isXl: isAbove('xl'),
     is2xl: isAbove('2xl'),
     isAbove,

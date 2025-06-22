@@ -3,24 +3,24 @@ import Navbar from "./Navbar";
 import { Link } from 'react-scroll';
 function Hero() {
   return (
-    <div id="hero" className=" bg-[#1A1A1A] pl-5 pr-5 sm:pl-0 sm:h-screen relative overflow-hidden mt-15">
+    <div id="hero" className="relative bg-[#1A1A1A] pl-5 pr-5 sm:pl-0 sm:h-screen overflow-hidden mt-15">
 
       
 
       <img
-        src=""
+        src="null"
         alt=""
         className="pointer-events-none absolute w-[384px] h-[384px] blur-[35px] top-[60px] -translate-x-1/2 rounded-full bg-[linear-gradient(135deg,#1991EB,#8764FF)] opacity-30 "
       />
 
       <img
-        src=""
+        src="null"
         alt=""
         className="pointer-events-none absolute w-[256px] h-[256px]  blur-[35px] top-[100px] right-0 -translate-x-[-50%] rounded-full bg-[linear-gradient(-135deg,#1991EB,#8764FF)] opacity-30"
       />
 
       <img
-        src=""
+        src="null"
         alt=""
         className="pointer-events-none absolute w-[300px] h-[300px] blur-[50px] top-[55%] left-1/2 -translate-x-[100%]  rounded-full bg-[linear-gradient(-135deg,#1991EB,#8764FF)] opacity-30 -translate-y-1/2"
       />
@@ -41,7 +41,7 @@ function Hero() {
           <Link to="contact" smooth={true} duration={3000} className="text-white font-semibold flex flex-row justify-center items-center gap-2 bg-gradient-to-tl from-[#1991EB] to-[#8764FF] h-[76px] w-[260px] rounded-[16px] cursor-pointer transform hover:scale-105 transition-transform duration-200">Launch My SaaS<img src="./arrowFrame.svg"></img></Link>
 
        
-        <NavLink to="/projects" smooth={true} className="font-medium text-white h-[76px] w-[203px] flex justify-center items-center bg-gradient-to-b from-[rgba(47,49,69,1)] to-[rgba(40,43,74,1)] rounded-[16px] transform hover:scale-105 transition-transform duration-200"><span>View Our Projects</span></NavLink>
+        <NavLink to="/projects" className="font-medium text-white h-[76px] w-[203px] flex justify-center items-center bg-gradient-to-b from-[rgba(47,49,69,1)] to-[rgba(40,43,74,1)] rounded-[16px] transform hover:scale-105 transition-transform duration-200"><span>View Our Projects</span></NavLink>
       </div>
       
     </div>
