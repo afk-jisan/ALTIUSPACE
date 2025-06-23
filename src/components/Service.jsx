@@ -8,8 +8,8 @@ const Service = () => {
             <div className="flex flex-col sm:flex-row items-center gap-30 py-20">
                 <div>
                     <div className="relative w-[200px] h-[200px]">
-                        <img src="null" className="absolute top-0 left-0 w-[200px] h-[200px] rounded-lg bg-[#E38181]"></img>
-                        <img src="null" className="absolute top-[40%] left-[40%] w-[200px] h-[200px] rounded-lg bg-[#E0EC60]"></img>
+                        <img src="" className="absolute top-0 left-0 w-[200px] h-[200px] rounded-lg bg-[#E38181]"></img>
+                        <img src="" className="absolute top-[40%] left-[40%] w-[200px] h-[200px] rounded-lg bg-[#E0EC60]"></img>
                     </div>
                 </div>
                 <div className="px-10">
@@ -22,8 +22,8 @@ const Service = () => {
             <div className="flex flex-col sm:flex-row items-center gap-30 py-20">
                 <div>
                     <div className="relative w-[200px] h-[200px]">
-                        <img src="null" className="absolute top-0 left-0 w-[200px] h-[200px] rounded-lg bg-[#B781E3]"></img>
-                        <img src="null" className="absolute top-[40%] left-[40%] w-[200px] h-[200px] rounded-lg bg-[#7EEC60]"></img>
+                        <img src="" className="absolute top-0 left-0 w-[200px] h-[200px] rounded-lg bg-[#B781E3]"></img>
+                        <img src="" className="absolute top-[40%] left-[40%] w-[200px] h-[200px] rounded-lg bg-[#7EEC60]"></img>
                     </div>
                 </div>
                 <div className="px-10">
@@ -37,8 +37,8 @@ const Service = () => {
             <div className="flex flex-col sm:flex-row items-center gap-30 py-20">
                 <div>
                     <div className="relative w-[200px] h-[200px]">
-                        <img src="null" className="absolute top-0 left-0 w-[200px] h-[200px] rounded-lg bg-[#CEE381]"></img>
-                        <img src="null" className="absolute top-[40%] left-[40%] w-[200px] h-[200px] rounded-lg bg-[#BF60EC]"></img>
+                        <img src="" className="absolute top-0 left-0 w-[200px] h-[200px] rounded-lg bg-[#CEE381]"></img>
+                        <img src="" className="absolute top-[40%] left-[40%] w-[200px] h-[200px] rounded-lg bg-[#BF60EC]"></img>
                     </div>
                 </div>
                 <div className="px-10">

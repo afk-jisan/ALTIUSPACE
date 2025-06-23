@@ -15,6 +15,7 @@
   --font-pattaya: "Pattaya", cursive; /* 'cursive' is a good fallback for Pattaya */
   /* You can also override the default sans, serif, or mono fonts: */
   /* --font-sans: "Pattaya", sans-serif; */
+  --breakpoint-xsm: 500px;
   --breakpoint-lgc: 950px;
   --breakpoint-smc: 683px;
   --breakpoint-nav: 1049px;
