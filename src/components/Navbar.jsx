@@ -12,13 +12,13 @@ function Navbar() {
     <>
     { isSideNavOpen && <SideMenu toggleSideNav={toggleSideNav} /> }
     
-    <nav className="navbar-container fixed top-6 left-1/2 -translate-x-1/2 nav:w-[1049px] w-[90vw] h-[82px] z-50 rounded-full px-5 lgc:px-10 py-2 flex items-center justify-between pointer-events-none overflow-hidden">
+    <nav className=" fixed top-6 left-1/2 -translate-x-1/2 nav:w-[1049px] w-[90vw] h-[82px] z-50 rounded-full px-5 lgc:px-10 flex items-center justify-between pointer-events-none overflow-hidden border border-solid border-white/10">
 
       {/* SVG Filter */}
       <svg style={{ position: 'absolute', width: 0, height: 0 }}>
         <filter id="blotty-filter">
-          <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="2" seed="10" result="turbulence">
-            <animate attributeName="seed" from="0" to="100" dur="1s" repeatCount="" />
+          <feTurbulence type="turbulence" baseFrequency="0.01" numOctaves="2" seed="20" result="turbulence">
+            <animate attributeName="seed" from="0" to="0" dur="1s" repeatCount="" />
           </feTurbulence>
           <feDisplacementMap in2="turbulence" in="SourceGraphic" scale="12" xChannelSelector="R" yChannelSelector="G" />
         </filter>

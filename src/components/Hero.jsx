@@ -27,11 +27,11 @@ function Hero() {
       
       <div>
       <div className="flex flex-col justify-center items-center">
-        <h1 className="mt-8 mb-10 text-[14px] font-medium px-4 py-3 text-[#AAABB5] rounded-full border border-white/20 shadow-[0_8px_32px_rgba(31,38,135,0.37)] bg-gradient-to-b from-[rgba(47,49,69,1)] to-[rgba(40,43,74,1)]">
+        <h1 className="mt-15 mb-10 text-[14px] font-medium px-4 py-3 text-[#AAABB5] rounded-full border border-white/20 shadow-[0_8px_32px_rgba(31,38,135,0.37)] bg-gradient-to-b from-[rgba(47,49,69,1)] to-[rgba(40,43,74,1)]">
           Pioneers in SaaS Product Innovation
         </h1>
-        <p className="text-white text-[48px] sm:text-[72px] font-bold leading-18">We Create SaaS
-          <br/><span className="bg-gradient-to-r from-[#9F83FF] to-[#47A7EF] bg-clip-text text-transparent text-[48px] sm:text-[72px] font-bold">That Sells Itself</span>
+        <p className="text-white text-[10vw] sm:text-[72px] font-bold leading-[12vw] sm:leading-18">We Create SaaS
+          <br/><span className="bg-gradient-to-r from-[#9F83FF] to-[#47A7EF] bg-clip-text text-transparent text-[10vw] sm:text-[72px] font-bold">That Sells Itself</span>
         </p>
         <p className="mt-10 text-[rgba(101,101,101,100)] text-[18px] font-normal">We partner with visionary SaaS founders to architect go-to-market strategies<br/>that scale. From technical sales engineering to revenue acceleration.</p>
       </div>

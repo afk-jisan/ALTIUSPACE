@@ -9,6 +9,7 @@
 
 :root {
   background-color: #1a1a1a;
+  --font-size-fluid-48: clamp(24px, 4vw + 1rem, 48px);
 }
 
 @theme {
@@ -23,11 +24,7 @@
 }
 
 @utility navbar-container {
-  box-shadow: 1px 1px 2px 0px #ffffff4d inset;
-
-  box-shadow: -1px -1px 2px 0px #ffffff1a inset;
-
-  box-shadow: 0px 0px 10px 0px #ffffff29 inset;
+  
   background: #ffffff03;
  
   top: 19px;

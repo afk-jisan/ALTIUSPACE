@@ -12,10 +12,10 @@ const Project = () => {
  })
 
   return (
-    <div id='projects' className="bg-white">
-      <div className=" flex flex-col justify-between items-center rounded-t-[30px] sm:rounded-t-[45px] md:rounded-t-[130px] pt-20 sm:pt-30 custom:w-[1200px] mx-auto">
+    <div id='projects' className="bg-white rounded-t-[50px] custom:rounded-t-[130px] mt-10 sm:mt-0">
+      <div className=" flex flex-col justify-between items-center  pt-20 sm:pt-30 custom:w-[1200px] mx-auto ">
         <p className="px-5 text-[38px] md:text-[48px] font-extrabold bg-gradient-to-r from-[#9F83FF] to-[#47A7EF] bg-clip-text text-transparent text-center">Making <span className="font-pattaya font-normal">waves</span> across all <span className="font-pattaya font-normal">industries</span></p>
-        <p className="px-5 text-[18px] md:text-[28px] text-[rgba(0,0,0,0.37)] pt-[50px] text-center mb-30 sm:mb-0">Every engagement is crafted with surgical precision to deliver measurable results that transform your SaaS business.</p>
+        <p className="px-5 text-[18px] md:text-[28px] text-[rgba(0,0,0,0.37)] pt-[50px] text-center">Every engagement is crafted with surgical precision to deliver measurable results that transform your SaaS business.</p>
         <div ref={container} className=" ">
           {
             projectsData.map( (project, i) => {
