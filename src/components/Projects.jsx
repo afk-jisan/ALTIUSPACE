@@ -11,6 +11,9 @@ const Project = () => {
   offset: ['start start', 'end end']
  })
 
+
+  
+
   return (
     <div id='projects' className="bg-white rounded-t-[50px] custom:rounded-t-[130px] mt-10 sm:mt-0">
       <div className=" flex flex-col justify-between items-center  pt-20 sm:pt-30 custom:w-[1200px] mx-auto ">

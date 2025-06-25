@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { Link } from 'react-scroll';
 import useBreakpoint from "../hooks/useBreakpoint";
 
-const SideMenu = ({ toggleSideNav }) => {
+const SideMenu = ({ toggleSideNav, theme }) => {
 
   const { isLgc } = useBreakpoint();
 
@@ -24,11 +24,11 @@ const SideMenu = ({ toggleSideNav }) => {
       <img
         src="null"
         alt=""
-        className="pointer-events-none absolute w-[350px] h-[280px] blur-[35px] top-[0px] right-[-50px] -translate-y-[10%] rounded-full bg-[linear-gradient(-135deg,#1991EB,#8764FF)] opacity-50"
+        className="pointer-events-none absolute w-[350px] h-[280px] blur-[35px] top-[0px] right-[-50px] -translate-y-[10%] rounded-full bg-[linear-gradient(-135deg,#1991EB,#8764FF)] opacity-40"
       />
       
       {/* Top */}
-      <div className="text-[18px] flex flex-col justify-end gap-4 p-4 bg-gradient-to-r from-[#9F83FF] to-[#47A7EF] bg-clip-text text-transparent font-medium">
+      <div className={`text-[20px] flex flex-col justify-end gap-4 p-4 font-medium ${theme === "light" ? "text-black" : "text-white" }`}>
         <Link to="service" duration={1000} smooth={true} onClick={toggleSideNav} className="cursor-pointer self-end">Services</Link>
         <Link to="projects" smooth={true} onClick={toggleSideNav} className="cursor-pointer self-end">Projects</Link>
         <Link to="pricing" duration={1000} onClick={toggleSideNav} smooth={true} className=" cursor-pointer self-end">Pricing</Link>

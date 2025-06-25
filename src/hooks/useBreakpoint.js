@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 
 const breakpoints = {
+  xsm: 500,
   sm: 640,
   md: 800,
   lgc:950,
@@ -23,6 +24,7 @@ export default function useBreakpoint() {
 
   return {
     width,
+    isXsm: isAbove('xsm'),
     isSm: isAbove('sm'),
     isMd: isAbove('md'),
     isLg: isAbove('lg'),

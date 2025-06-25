@@ -1,4 +1,4 @@
-const Service = () => {
+const Service = () => {  
     return (
         <div id='service' className="bg-white">
         <div className="bg-[#1A1A1A] rounded-[73px]">

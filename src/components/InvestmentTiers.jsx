@@ -48,9 +48,9 @@ const plans = [
 
 export default function InvestmentTiers() {
   return (
-    <section className="px-4 bg-white text-center py-35">
+    <section className="px-4 bg-white text-center py-20 sm:py-35">
       <div className="mb-6 text-lg font-medium tracking-wide uppercase">
-        <div className="shadow-custom-blue inline-block px-6 py-2 rounded-full bg-gradient-to-b from-[#A8B9EE] to-[#6C88E3] text-[rgba(255,255,255,0.6)] backdrop-blur-[32px] font-bold text-2xl sm:text-[40px] tracking-wider">
+        <div className="shadow-custom-blue font-kameron inline-block px-12 py-2 rounded-full bg-gradient-to-b from-[#A8B9EE] to-[#6C88E3] text-[rgba(255,255,255,0.6)] backdrop-blur-[32px] font-bold text-2xl sm:text-[40px] tracking-wider">
           INVESTMENT TIERS
         </div>
       </div>

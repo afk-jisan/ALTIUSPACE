@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pattaya&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kameron:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pattaya&display=swap');
 @import "tailwindcss";
 
 /* :root {
@@ -16,6 +17,7 @@
   --font-pattaya: "Pattaya", cursive; /* 'cursive' is a good fallback for Pattaya */
   /* You can also override the default sans, serif, or mono fonts: */
   /* --font-sans: "Pattaya", sans-serif; */
+  --font-kameron: "Kameron", ui-serif;
   --breakpoint-xsm: 500px;
   --breakpoint-lgc: 950px;
   --breakpoint-smc: 683px;
