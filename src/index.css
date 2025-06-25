@@ -46,3 +46,16 @@
     transform-style: preserve-3d;
 
 }
+
+@utility gradient-layer {
+    width: 100vw;
+    height: 868px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, #08081B 0%, rgba(8, 8, 27, 0) 50%, #08081B 100%);
+  }
+
+@utility shadow-custom-blue {
+  box-shadow: 0px 8px 32px 0px #5878DF;
+}

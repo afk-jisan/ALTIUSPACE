@@ -5,6 +5,7 @@ import Contact from "./Contact";
 import Pricing from "./Pricing";
 import Footer from "./Footer";
 import Navbar from "../components/Navbar";
+import InvestmentTiers from "../components/InvestmentTiers";
 function Home() {
   return (
     <>
@@ -14,7 +15,7 @@ function Home() {
       <Hero/>
       <Project/>
       <Service/>
-      <Pricing/>
+      <Pricing />
       <Contact/>
       <div className="border border-[#303030]"></div>
       <Footer/>

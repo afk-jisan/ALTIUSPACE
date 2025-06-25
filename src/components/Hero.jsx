@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 import { Link } from 'react-scroll';
 function Hero() {
   return (
-    <div id="hero" className="relative bg-[#1A1A1A] pl-5 pr-5 sm:pl-0 sm:h-screen overflow-hidden mt-15">
+    <div id="hero" className="relative pl-5 pr-5 sm:pl-0 sm:h-screen overflow-hidden mt-15">
 
       
 
