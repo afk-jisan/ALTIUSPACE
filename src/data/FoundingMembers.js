@@ -1,0 +1,38 @@
+export const members = [
+    {
+      name: "Touhid Shaon",
+      title: "Chief Operating Officer (COO)",
+      image: "./GroupedShaon.svg",
+      top: "93px",
+      right: 0,
+      mt: 0,
+      linkedin: "",
+    },
+    {
+      name: "Bakhtier Galib Jisan",
+      title: "Chief Technology Officer (CTO)",
+      image: "./GroupedJisan.svg",
+      top: '90px',
+      right: 0,
+      mt: 0,
+      linkedin: "",
+    },
+    {
+      name: "Tahsin Pathan",
+      title: "Head Of Design (web ui & product design)",
+      image: "./GroupedDrubo.svg",
+      top: "92px",
+      right: "-1px",
+      mt: 0,
+      linkedin: "",
+    },
+    {
+      name: "Shakeel",
+      title: "Chief Product Officer (CPO)",
+      image: "./GroupedShakeel.svg",
+      top: "73px",
+      right: "-5px",
+      mt: 10,
+      linkedin: "",
+    },
+  ];

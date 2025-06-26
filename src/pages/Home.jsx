@@ -7,7 +7,7 @@ import Contact from "./Contact";
 import Pricing from "./Pricing";
 import Footer from "./Footer";
 import Navbar from "../components/Navbar";
-import InvestmentTiers from "../components/InvestmentTiers";
+
 function Home() {
   const sectionThemes = {
     hero: "dark",
@@ -36,6 +36,7 @@ function Home() {
         <Pricing />
       </Section>
       <Section id="contact" setActiveSection={setActiveSection}>
+      
         <Contact />
       </Section>
       

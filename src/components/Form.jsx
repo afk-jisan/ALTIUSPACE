@@ -57,7 +57,7 @@ const Form = () => {
 
           <button
             type="submit"
-            className="w-full p-3 rounded-md text-white font-semibold
+            className="w-full p-3 rounded-[16px] text-white font-semibold
                        bg-gradient-to-tl from-[#1991EB] to-[#8764FF]
                        hover:from-purple-700 hover:to-blue-700
                        focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500
