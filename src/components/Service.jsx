@@ -1,6 +1,6 @@
 const Service = () => {  
     return (
-        <div id='service' className="bg-white">
+        <div id='service' className="bg-gradient-to-b from-white to-[#EBE9E9]">
         <div className="bg-[#1A1A1A] rounded-[73px]">
         <div className="bg-[#1A1A1A] rounded-[30px] sm:rounded-[73px] py-30 smc:px-20 custom:w-[1200px] mx-auto">
             <p className="px-5 sm:px-30 text-[48px] sm:text-[48px] text-center font-bold bg-gradient-to-r from-[#9F83FF] to-[#9F83FF] bg-clip-text text-transparent">We craft brand <span className="font-pattaya font-normal">identities</span> that don't just speak they <span className="font-pattaya font-normal">captivate.</span></p>

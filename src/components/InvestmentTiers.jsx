@@ -9,7 +9,7 @@ export default function InvestmentTiers() {
   };
 
   return (
-    <section className="px-4 bg-white text-center py-20 sm:py-35">
+    <section className="px-4 bg-[#EBE9E9] text-center py-20 sm:py-35">
       <div className="mb-6 text-lg font-medium tracking-wide uppercase">
         <div className="shadow-[0px_4px_4px_#00000040] font-kameron inline-block px-12 py-3 mb-3 bg-[linear-gradient(271.94deg,_rgba(101,78,177,0.74)_58.66%,_rgba(187,164,215,0.444)_117.97%)] rounded-[26px] text-[rgba(255,255,255,0.6)] backdrop-blur-[32px] font-bold text-2xl sm:text-[40px] tracking-wider">
           INVESTMENT TIERS
@@ -24,11 +24,8 @@ export default function InvestmentTiers() {
         {plans.map((plan, idx) => (
           <div
             key={idx}
-            className="relative mt-8 xsm:mt-0 rounded-2xl h-fit p-6 shadow-[0px_8px_32px_rgba(88,120,223,1)] bg-white border text-black  border-white/10 backdrop-blur-2xl text-left"
-            style={{
-              boxShadow: "0px 0px 30px rgba(135, 100, 255, 0.4)",
-              color: "rgba(255, 255, 255, 0.9)",
-            }}
+            className="relative mt-8 xsm:mt-0 rounded-2xl h-fit p-6 shadow-[4px_4px_4px_rgba(0,0,0,0.2)] bg-white border border-gray-100 text-black backdrop-blur-2xl text-left"
+            
           >
             {plan.tag && (
               <div className="absolute w-[125px] -top-6 left-1/2 -translate-x-1/2 bg-gradient-to-r from-[#9F8DFC] to-[#56A6EC] text-white px-5 py-3 rounded-full text-[14px]">
