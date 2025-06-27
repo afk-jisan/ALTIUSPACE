@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { plans } from "../data/plan";
-
+import { Link } from "react-scroll";
 export default function InvestmentTiers() {
   const [expandedIndex, setExpandedIndex] = useState(null);
 
@@ -77,11 +77,10 @@ export default function InvestmentTiers() {
 
             <div className="flex flex-col gap-2 ">
               
-              <button className="w-full py-4 relative cursor-pointer bg-[linear-gradient(-78deg,_rgba(187,164,215,0.6)_0%,_rgba(242,242,242,0.8)_100%)]  text-black rounded-[12px] hover:bg-gray-100 transition">
-                
+            <Link to="contact" duration={500} smooth={true} className="w-full flex justify-center py-4 relative cursor-pointer bg-[linear-gradient(-78deg,_rgba(187,164,215,0.6)_0%,_rgba(242,242,242,0.8)_100%)]  text-black rounded-[12px] hover:bg-gray-100 transition">
                 <div className="absolute bg-[rgba(31,38,135,0.37)] inset-0 pointer-events-none z-0 blur-[24px] rounded-[12px] "></div>
                 <span className="relative z-10  font-semibold">Get Started</span>
-              </button>
+              </Link>
               <button
                 onClick={() => toggleDetails(idx)}
                 className="mt-2 cursor-pointer font-semibold text-[16px] text-black hover:text-gray-500"

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { supabase } from "../lib/SupabaseClient";
 
-const UserDetails = ({ meetingType, dateTime }) => {
+const UserDetails = ({ meetingType, dateTime, setStep }) => {
   const [form, setForm] = useState({
     firstName: "",
     lastName: "",
@@ -56,7 +56,7 @@ const UserDetails = ({ meetingType, dateTime }) => {
         ],
       };
 
-      console.log("Sending request to Edge Function:", requestBody);
+      // console.log("Sending request to Edge Function:", requestBody);
 
       const res = await fetch(
         "https://fsaopihpfsogsedzkenr.supabase.co/functions/v1/create-meeting",
@@ -81,8 +81,10 @@ const UserDetails = ({ meetingType, dateTime }) => {
         topic: form.topic,
         meet_link: meetLink,
       });
-
+      
       setSuccess(true);
+      setStep(4);
+      
     } catch (err) {
       console.error("Error scheduling meeting:", err);
       alert("Something went wrong.");
@@ -91,18 +93,6 @@ const UserDetails = ({ meetingType, dateTime }) => {
     }
   };
 
-  if (success) {
-    return (
-      <div className="text-center py-10">
-        <h2 className="text-2xl font-semibold text-green-400 mb-4">
-          ✅ Meeting Scheduled!
-        </h2>
-        <p className="text-gray-300">
-          We’ve emailed your confirmation. See you soon!
-        </p>
-      </div>
-    );
-  }
 
   return (
     <form
@@ -212,7 +202,7 @@ const UserDetails = ({ meetingType, dateTime }) => {
                 : "bg-white/5 border-white/10"
             }`}
           >
-            Zoom/Google Meet
+            Google Meet
           </button>
           <button
             type="button"

@@ -11,7 +11,7 @@ const meetingOptions = [
     ],
     duration: '30min',
     price: 'Free',
-    icon: '💬',
+    icon: './free_consulltation.png',
     popular: true,
   },
   {
@@ -26,7 +26,7 @@ const meetingOptions = [
     ],
     duration: '60min',
     price: '$49',
-    icon: '📘',
+    icon: './deep_dive.png',
   },
   {
     id: 'emergency',
@@ -40,7 +40,7 @@ const meetingOptions = [
     ],
     duration: '90min',
     price: '$79',
-    icon: '⚡',
+    icon: './emergency_consultation.png',
   },
 ];
 
@@ -52,34 +52,40 @@ const MeetingType = ({ onNext }) => {
       {meetingOptions.map((option) => (
         <div
           key={option.id}
-          className="rounded-[24px] p-6 bg-gradient-to-r from-[#292A4C] to-[#212346] cursor-pointer border border-[#3D3E55] drop-shadow-[0px_8px_32px_rgba(31,38,135,0.37)] transition duration-200 hover:scale-[1.01]"
+          className="rounded-[24px] px-5 xsm:px-10 py-12 bg-gradient-to-r from-[#292A4C] to-[#212346] cursor-pointer border border-[#3D3E55] drop-shadow-[0px_8px_32px_rgba(31,38,135,0.37)] transition duration-200 hover:scale-[1.01]"
           onClick={() => onNext(option.id)}
         >
-          <div className="flex items-start justify-between gap-4">
+          <div className="flex items-start justify-between gap-4 relative">
             {/* Left Icon */}
-            <div className="flex-shrink-0 w-10 text-3xl pt-1">{option.icon}</div>
+            <img src={option.icon} alt={option.id} className="h-[48px] w-[48px] pointer-events-none" ></img>
+            
+            {option.popular && (
+                <p className="absolute top-0 left-0 translate-x-[5px] xsm:translate-x-[-5px] translate-y-[-62px] text-[12px] font-semibold bg-gradient-to-r from-[#8167FE] to-[#208EEC] px-4 py-1 rounded-full text-white">
+                  Most Popular
+                </p>
+              )}
+
 
             {/* Middle Content */}
             <div className="flex-grow">
               <div className="flex items-center gap-2 mb-1">
                 <h3 className="text-lg font-bold">{option.title}</h3>
-                {option.popular && (
-                  <span className="text-xs font-semibold bg-gradient-to-r from-[#8167FE] to-[#208EEC] px-4 py-2 rounded-full text-white">
-                    Most Popular
-                  </span>
-                )}
               </div>
-              <p className="text-sm text-white my-5">{option.description}</p>
-              <ul className="list-disc ml-5 text-sm text-white">
+              <p className="text-sm text-white mt-5 mb-4">{option.description}</p>
+              
                 {option.points.map((point, index) => (
-                  <li key={index}>{point}</li>
+                  <div className="flex flex-row gap-2 text-[14px]">
+                  <p className="text-green-500 ">✓</p>
+                  <p>{point}</p>
+                  </div>
                 ))}
-              </ul>
+              
+              
             </div>
 
             {/* Right Price & Duration */}
-            <div className="flex-shrink-0 text-right w-24">
-              <p className="text-lg font-semibold">{option.price}</p>
+            <div className="flex-shrink-0 text-right w-[50px]">
+              <p className="text-lg font-semibold bg-gradient-to-r from-[#9F83FF] to-[#47A7EF] bg-clip-text text-transparent">{option.price}</p>
               <p className="text-sm text-gray-400">{option.duration}</p>
             </div>
           </div>

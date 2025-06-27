@@ -15,7 +15,7 @@ export const members = [
       top: '90px',
       right: 0,
       mt: 0,
-      linkedin: "",
+      linkedin: "https:www.linkedin.com/in/baktier-galib/",
     },
     {
       name: "Tahsin Pathan",
@@ -24,7 +24,7 @@ export const members = [
       top: "92px",
       right: "-1px",
       mt: 0,
-      linkedin: "",
+      linkedin: "https://www.linkedin.com/in/tahsin-pathan/",
     },
     {
       name: "Shakeel",
@@ -33,6 +33,6 @@ export const members = [
       top: "73px",
       right: "-5px",
       mt: 10,
-      linkedin: "",
+      linkedin: "https://www.linkedin.com/in/shakeel2003",
     },
   ];

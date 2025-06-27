@@ -26,20 +26,20 @@ const ScheduleMeeting = () => {
 
   return (
     <div className="min-h-screen bg-[#1A1A1A] text-white">
-      <div className="custom:w-[1200px] px-30 mx-auto">
+      <div className="custom:w-[1200px] px-2 xsm:px-10 md:px-20 lg:px-30 mx-auto">
         <div className='mt-5'>
           <a href="/" className="text-sm text-white">&larr; Back to Home</a>
         </div>
         
 
-        <div className="flex justify-center items-center mt-15 mb-4 ">
+        <div className="flex justify-center items-center mt-10 mb-4 ">
           <button className="flex justify-center items-center gap-2 px-4 py-2 border rounded-full text-black bg-[linear-gradient(-77deg,_rgba(255,255,255,0.85)_0%,_rgba(255,255,255,0.70)_100%)]">
             <img src="./calendar.svg" alt="calendar" className="w-4 h-4 text-black" />
             <p>Book a Consultation</p>
           </button>
         </div>
 
-        <h1 className="text-4xl font-bold text-center text-[linear-gradient(-85deg,_#BDC1C6,_#F8F9FA)]] mb-8">Schedule Your Session</h1>
+        <h1 className="text-4xl font-bold text-center text-[linear-gradient(-85deg,_#BDC1C6,_#F8F9FA)]] mb-7">Schedule Your Session</h1>
         <p className="text-center text-gray-400 mb-6">
           Book a strategic consultation with our SaaS transformation experts.
           <br/>Choose your preferred meeting type and time that works best for you.
@@ -49,7 +49,7 @@ const ScheduleMeeting = () => {
         <div className="grid grid-cols-1 sm:grid-cols-3 w-fit mx-auto gap-4 mb-6">
           {benefits.map((b, idx) => (
             <div key={idx} className="flex items-center gap-2">
-              <img src={b.icon} alt={b.label} className="w-6 h-6" />
+              <img src={b.icon} alt={b.label} />
               <p className="text-sm text-gray-300">{b.label}</p>
             </div>
           ))}
@@ -58,15 +58,16 @@ const ScheduleMeeting = () => {
 
         <div className="flex justify-between gap-6 my-10 text-sm">
           <div className="flex items-center gap-2">
-            {step > 1 ? <img src='./completed.svg' alt="completed"/> :<p className='bg-white/5 border border-white/10  w-10 h-10 rounded-full flex justify-center items-center backdrop-blur-md '>1</p>} 
+            {step == 1 ? <p className='bg-[#8764FF]  w-10 h-10 rounded-full flex justify-center items-center backdrop-blur-md '>1</p> : <img src='./completed.svg' alt="completed"/>} 
             <p>Meeting Type</p>
           </div>
           <div className="flex items-center gap-2">
-            {step >= 2 ? <img src='./completed.svg' alt="completed"/> :<p className='bg-white/5 border border-white/10  w-10 h-10 rounded-full flex justify-center items-center backdrop-blur-md '>2</p>} 
+            
+            {step === 2 ? (<p className="bg-[#8764FF] w-10 h-10 rounded-full flex justify-center items-center backdrop-blur-md">2</p>) : step < 2 ? (<p className="bg-white/5 border border-white/10 w-10 h-10 rounded-full flex justify-center items-center backdrop-blur-md">2</p>) : (<img src="./completed.svg" alt="completed" />)}
             <p>Date & Time</p>  
           </div>
-          <div className={`flex items-center gap-2 ${step === 3 ? 'text-green-400' : ''}`}>
-            {step >= 3 ? <img src='./completed.svg' alt="completed"/> :<p className='bg-white/5 border border-white/10  w-10 h-10 rounded-full flex justify-center items-center backdrop-blur-md '>3</p>} 
+          <div className='flex items-center gap-2'>
+          {step === 3 ? (<p className="bg-[#8764FF] w-10 h-10 rounded-full flex justify-center items-center backdrop-blur-md">3</p>) : step < 3 ? (<p className="bg-white/5 border border-white/10 w-10 h-10 rounded-full flex justify-center items-center backdrop-blur-md">3</p>) : (<img src="./completed.svg" alt="completed" />)}
             <p>Your Details</p>
           </div>
         </div>
@@ -81,7 +82,15 @@ const ScheduleMeeting = () => {
           }}
           unavailableDates={unavailable}
         />}
-        {step === 3 && <UserDetails meetingType={meetingType} dateTime={dateTime} />}
+        {step === 3 && <UserDetails meetingType={meetingType} dateTime={dateTime} setStep={setStep}/>}
+        { step === 4 && 
+          <div className="text-center bg-gradient-to-r from-[#292A4C] to-[#212346] cursor-pointer border border-[#3D3E55] drop-shadow-[0px_8px_32px_rgba(31,38,135,0.37)] rounded-[24px] p-10">
+            <h2 className="text-2xl font-semibold text-green-400 mb-4">
+             Meeting Scheduled!
+            </h2>
+            <p className="text-gray-300">We’ve emailed your confirmation. See you soon!</p>
+          </div>
+        }
       </div>
     </div>
   );
