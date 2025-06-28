@@ -46,7 +46,7 @@ const meetingOptions = [
 
 const MeetingType = ({ onNext }) => {
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 px-2 xsm:px-10 md:px-20 lg:px-30">
       <h2 className="text-2xl font-semibold">Select Meeting Type</h2>
 
       {meetingOptions.map((option) => (

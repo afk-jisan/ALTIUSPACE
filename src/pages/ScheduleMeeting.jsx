@@ -26,7 +26,7 @@ const ScheduleMeeting = () => {
 
   return (
     <div className="min-h-screen bg-[#1A1A1A] text-white">
-      <div className="custom:w-[1200px] px-2 xsm:px-10 md:px-20 lg:px-30 mx-auto">
+      <div className="custom:w-[1200px]  mx-auto">
         <div className='mt-5'>
           <a href="/" className="text-sm text-white">&larr; Back to Home</a>
         </div>
@@ -56,7 +56,7 @@ const ScheduleMeeting = () => {
         </div>
 
 
-        <div className="flex justify-between gap-6 my-10 text-sm">
+        <div className="flex justify-between xsm:gap-6 my-10 text-sm px-2 xsm:px-10 md:px-20 lg:px-30">
           <div className="flex items-center gap-2">
             {step == 1 ? <p className='bg-[#8764FF]  w-10 h-10 rounded-full flex justify-center items-center backdrop-blur-md '>1</p> : <img src='./completed.svg' alt="completed"/>} 
             <p>Meeting Type</p>
@@ -77,7 +77,7 @@ const ScheduleMeeting = () => {
           onNext={(date, time) => {
             setSelectedDate(date);
             setSelectedTime(time);
-            setDateTime({ date, time }); // ensure data is passed to UserDetails
+            setDateTime({ date, time });
             setStep(3); // move to UserDetails
           }}
           unavailableDates={unavailable}
@@ -85,9 +85,10 @@ const ScheduleMeeting = () => {
         {step === 3 && <UserDetails meetingType={meetingType} dateTime={dateTime} setStep={setStep}/>}
         { step === 4 && 
           <div className="text-center bg-gradient-to-r from-[#292A4C] to-[#212346] cursor-pointer border border-[#3D3E55] drop-shadow-[0px_8px_32px_rgba(31,38,135,0.37)] rounded-[24px] p-10">
-            <h2 className="text-2xl font-semibold text-green-400 mb-4">
-             Meeting Scheduled!
-            </h2>
+            <div className='flex flex-row justify-center items-center text-2xl gap-2'>
+              <img src='./tick.svg' alt='completed' className='pt-1'></img>
+              <h2 className="font-semibold text-green-600 ">Meeting Scheduled!</h2>
+            </div>
             <p className="text-gray-300">We’ve emailed your confirmation. See you soon!</p>
           </div>
         }

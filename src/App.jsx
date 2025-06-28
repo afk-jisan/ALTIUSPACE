@@ -1,9 +1,26 @@
 import { Outlet, Link } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import { ReactLenis } from 'lenis/react'
+import { useEffect, useRef } from 'react'
+
+
 
 function App() {
+  const lenisRef = useRef()
+  
+  useEffect(() => {
+    function update(time) {
+      lenisRef.current?.lenis?.raf(time)
+    }
+  
+    const rafId = requestAnimationFrame(update)
+  
+    return () => cancelAnimationFrame(rafId)
+  }, [])
+
   return (
     <div className="min-h-screen">
+      <ReactLenis root options={{ autoRaf: true }} ref={lenisRef} />
       
       
       <main>

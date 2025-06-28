@@ -1,4 +1,4 @@
-import { projectsData } from "../data/data";
+import { projectsData } from "../data/ProjectsData";
 import Card from "../components/Card";
 import { motion, useScroll } from "framer-motion"
 import { useRef } from "react";

@@ -47,11 +47,12 @@ const DateTimePicker = ({ onNext, unavailableDates = [] }) => {
   }, [selectedDate, selectedTime, onNext]);
 
   return (
-    <div className="space-y-6">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div className='bg-gradient-to-r from-[#292A4C] to-[#212346] cursor-pointer border border-[#3D3E55] drop-shadow-[0px_8px_32px_rgba(31,38,135,0.37)] rounded-[24px] p-10'>
-          <h2 className="text-xl font-semibold mb-2">Select Date</h2>
+    <div className="space-y-6 px-5 lg:px-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-8">
+        <div className='bg-gradient-to-r from-[#292A4C] to-[#212346] cursor-pointer border border-[#3D3E55] drop-shadow-[0px_8px_32px_rgba(31,38,135,0.37)] rounded-[24px] xsm:p-5 lg:p-10'>
+          
           <div className="p-4 rounded-xl">
+          <h2 className="text-xl font-semibold mb-5">Select Date</h2>
             <div className="flex justify-between items-center mb-4">
               <button
                 className="text-gray-400 disabled:opacity-40"
@@ -102,9 +103,9 @@ const DateTimePicker = ({ onNext, unavailableDates = [] }) => {
           </div>
         </div>
 
-        <div className='bg-gradient-to-r from-[#292A4C] to-[#212346] cursor-pointer border border-[#3D3E55] drop-shadow-[0px_8px_32px_rgba(31,38,135,0.37)] rounded-[24px] p-10'>
+        <div className='bg-gradient-to-r from-[#292A4C] to-[#212346] cursor-pointer border border-[#3D3E55] drop-shadow-[0px_8px_32px_rgba(31,38,135,0.37)] rounded-[24px] p-5 sm:p-10'>
           <h2 className="text-xl font-semibold mb-2 ml-1">Select Time</h2>
-          <div className="py-4 grid grid-cols-3 gap-3">
+          <div className="py-4 grid grid-cols-2 xsm:grid-cols-3 gap-3">
             {timeSlots.map((time) => (
               <div
                 key={time}

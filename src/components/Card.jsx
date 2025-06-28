@@ -18,16 +18,16 @@ export default function Card( { title, description, src, subtitle, color, i, pro
         <div ref={container} className="h-[100vh] flex justify-center items-center sticky top-0 xl:w-[1200px] pt-30 xsm:pt-0">
             <motion.div style={{scale, backgroundColor: color, top: `calc(-10% + ${i * 35}px)`, left: isMd ? `calc(-1% + ${i * 40}px)` : 0, width: isMd ? '75%' : '92%' }} className= "h-fit sm:h-[466px] relative top-[-10%] rounded-[35px] ">
                 <div className="flex flex-col sm:flex-row justify-center items-center">
-                    <div className="sm:w-[50%] h-[300px] sm:h-[466px] p-5 xsm:p-10 ">
-                        <div className=" rounded-[16px] relative overflow-hidden w-full h-full ">
+                    <div className="sm:w-[50%] sm:h-[466px] p-5 xsm:p-10 ">
+                        <div className="rounded-[16px] relative overflow-hidden w-full h-full ">
                             <motion.div style={{scale: imageScale}} className="w-full ">
-                                <img className="h-[466px] w-full object-fill" src={src}></img>
+                                <img className="h-full sm:h-[350px] w-full object-fill" src={src}></img>
                             </motion.div>                    
                         </div>
                     </div>
                     <div className="flex flex-col justify-center items-start flex-1/2 p-11 pt-0 sm:p-5">
                         <p className="text-[30px] font-pattaya font-normal">{title}</p>
-                        <p className="text-[30px] xsm:font-medium mb-3 xsm:mb-0">{subtitle}</p>
+                        <p className="text-[30px] xsm:font-medium my-3 leading-8">{subtitle}</p>
                         <p className="text-[18px]">{description}</p>
                     </div>
 

@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 function Hero() {
 
   return (
-    <div id="hero" className="relative pl-5 pr-5 sm:pl-0 sm:h-screen overflow-hidden mt-15">
+    <div id="hero" className="relative pl-5 pr-5 sm:pl-0 sm:h-screen overflow-hidden mt-8 xsm:mt-15">
 
       <img
         src="null"
@@ -32,7 +32,7 @@ function Hero() {
         <p className="text-white text-[10vw] sm:text-[72px] font-bold leading-[12vw] sm:leading-18">We Create <span className="font-pattaya">SaaS</span>
           <br/><span className="bg-gradient-to-r from-[#9F83FF] to-[#47A7EF] bg-clip-text text-transparent text-[10vw] sm:text-[72px] font-bold">That Sells Itself</span>
         </p>
-        <p className="mt-10 text-[rgba(101,101,101,100)] text-[18px] font-normal">We partner with visionary SaaS founders to architect go-to-market strategies<br/>that scale. From technical sales engineering to revenue acceleration.</p>
+        <p className="mt-10 text-[rgba(101,101,101,100)] text-[18px] font-normal text-center">We partner with visionary SaaS founders to architect go-to-market strategies <span class="block mt-2">that scale. From technical sales engineering to revenue acceleration.</span></p>
       </div>
 
       <div className="flex flex-row justify-center items-center flex-wrap gap-3 my-20"> 

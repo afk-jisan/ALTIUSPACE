@@ -44,7 +44,7 @@ const Form = () => {
   };
 
   return (
-    <div className="h-fit flex items-center justify-center p-4">
+    <div className="h-fit flex items-center justify-center sm:pl-4">
       <div className="bg-linear-65 from-[#2E3051] to-[#222447] p-8 shadow-xl w-full rounded-[24px] border border-[#38394C]">
         <h2 className="text-white text-2xl font-bold mb-6">Start Your Transformation</h2>
 

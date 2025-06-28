@@ -11,7 +11,7 @@ export default function InvestmentTiers() {
   return (
     <section className="px-4 bg-[#EBE9E9] text-center py-20 sm:py-35">
       <div className="mb-6 text-lg font-medium tracking-wide uppercase">
-        <div className="shadow-[0px_4px_4px_#00000040] font-kameron inline-block px-12 py-3 mb-3 bg-[linear-gradient(271.94deg,_rgba(101,78,177,0.74)_58.66%,_rgba(187,164,215,0.444)_117.97%)] rounded-[26px] text-[rgba(255,255,255,0.6)] backdrop-blur-[32px] font-bold text-2xl sm:text-[40px] tracking-wider">
+        <div className="shadow-[0px_4px_4px_#00000040] font-kameron inline-block px-12 py-3 mb-3 bg-[linear-gradient(271.94deg,_rgba(101,78,177,0.74)_58.66%,_rgba(187,164,215,0.444)_117.97%)] rounded-[26px] text-[rgba(255,255,255,0.6)] backdrop-blur-[32px] font-bold text-xl sm:text-[40px] tracking-wider">
           INVESTMENT TIERS
         </div>
       </div>

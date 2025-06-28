@@ -5,8 +5,8 @@ import ScheduleMeeting from "./ScheduleMeeting";
 function Contact() {
   return (
     <div id='contact' className="bg-[#EBE9E9]">
-    <div className="bg-[rgba(26,26,26,1)] pt-20 border-2 rounded-t-[30px] sm:rounded-t-[73px]">
-    <div className="flex flex-col justify-center items-center bg-[rgba(26,26,26,1)] p-5 sm:p-15 custom:w-[1200px] mx-auto">
+    <div className="bg-[rgba(26,26,26,1)] pt-20 rounded-t-[30px] sm:rounded-t-[73px]">
+    <div className="flex flex-col justify-center items-center bg-[rgba(26,26,26,1)] p-5 lg:p-15 custom:w-[1200px] mx-auto">
     <FoundingMembers />
       <div className="">
         <h1 className="text-[30px] font-[700px] text-white text-center pb-5">Ready to Transform Your SaaS?</h1>
@@ -25,19 +25,19 @@ function Contact() {
           <p className="bg-[linear-gradient(to_right,#1991EB_0%,#278BEE_0%,#278BEE_7%,#F1F3F4_100%,#84A7ED_100%)] bg-clip-text text-transparent text-[48px] font-bold">Your Success</p>
           <p className="text-[rgba(154,154,154,1)] text-[20px] font-normal">Every great SaaS transformation starts with a conversation. Let's discuss how we can architect your path to market leadership.</p>
 
-          <div className="flex flex-row gap-2 items-center mt-12 ml-5 mb-2">
+          <div className="flex flex-row gap-2 items-center mt-12 mb-2">
             <div className="h-[48px] w-[48px] rounded-full border-1 border-[#3B3B3B] bg-[#262626] flex justify-center items-center shadow-lg">
               <img className="h-[20px] w-[20px] pointer-events-none" src="./Email.svg"></img>
             </div>
             <span className="text-white text-[18px]">contact@altiuspace</span>
           </div>
-          <div className="flex flex-row gap-2 items-center ml-5 mb-2">
+          <div className="flex flex-row gap-2 items-center mb-2">
             <div className="h-[48px] w-[48px] rounded-full border-1 border-[#3B3B3B] bg-[#262626] flex justify-center items-center shadow-lg">
               <img className="h-[20px] w-[20px] pointer-events-none" src="./phone.svg"></img>
             </div>
             <span className="text-white text-[18px]">+88 017 030 28 626</span>
           </div>
-          <div className="flex flex-row gap-2 items-center ml-5">
+          <div className="flex flex-row gap-2 items-center">
             <div className="h-[48px] w-[48px] rounded-full border-1 border-[#3B3B3B] bg-[#262626] flex justify-center items-center shadow-lg">
               <img className="h-[20px] w-[20px] pointer-events-none" src="./linkedin.svg"></img>
             </div>
@@ -46,7 +46,7 @@ function Contact() {
 
         </div>
         {/* Grid - 2 */}
-        <div className="">
+        <div className="mt-8 sm:mt-0 w-full">
           <Form/>
         </div>
       </div>

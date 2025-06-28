@@ -15,7 +15,7 @@ function Navbar( { theme }) {
     <>
     { isSideNavOpen && <SideMenu toggleSideNav={toggleSideNav} theme={theme} /> }
     
-    <nav className="  xsm:fixed xsm:top-6 xsm:left-1/2 -translate-x-0 xsm:-translate-x-1/2 w-full xsm:w-[80vw] xsm:h-[82px] pt-5 xsm:pt-0 z-50 rounded-full px-5 lgc:px-10 flex items-center justify-between pointer-events-none overflow-hidden xsm:border border-solid border-white/10">
+    <nav className="navbar-container  xsm:fixed xsm:left-1/2  -translate-x-0 xsm:-translate-x-1/2 w-full xsm:w-[80vw] h-[82px] z-50 rounded-full px-5 lgc:px-10 flex items-center justify-between pointer-events-none overflow-hidden border border-solid border-white/10">
 
       { isXsm && <SVGfilter /> }
 
@@ -23,7 +23,7 @@ function Navbar( { theme }) {
       <div className="relative z-10 w-full flex justify-between gap-5 items-center pointer-events-auto bg-transparent">
         {/* Logo/Brand */}
         <Link to="hero" duration={1000} smooth={true} className="xsm:mb-1 cursor-pointer">
-          <span className="text-3xl lgc:text-3xl font-extrabold bg-gradient-to-r from-[#9F83FF] to-[#47A7EF] bg-clip-text text-transparent">ALTIUSPACE</span>
+          <span className="text-xl xsm:text-2xl lgc:text-3xl font-extrabold bg-gradient-to-r from-[#9F83FF] to-[#47A7EF] bg-clip-text text-transparent">ALTIUSPACE</span>
         </Link>
 
         {/* Navigation Links */}
@@ -43,7 +43,7 @@ function Navbar( { theme }) {
         <Link to="contact" smooth={true} duration={1000} className="hidden sm:block px-8 py-4 rounded-[26px] text-white font-medium bg-gradient-to-tl from-[#1991EB] to-[#8764FF] shadow-inner transform hover:scale-105 transition-transform duration-200 cursor-pointer">
           Get Started
         </Link>
-        <img className={`lgc:hidden flex cursor-pointer text-blue-400 ${theme === "light" ? "invert" : "" }`} src='./iconsax-align-left-2.svg' onClick={toggleSideNav}></img>
+        <img className={`lgc:hidden flex cursor-pointer text-blue-400 w-[46px] ${theme === "light" ? "invert" : ""}`} src='./iconsax-align-left-2.svg' onClick={toggleSideNav}></img>
       </div>
       </div>
     </nav>
