@@ -28,8 +28,9 @@ export default function InvestmentTiers() {
             
           >
             {plan.tag && (
-              <div className="absolute w-[125px] -top-6 left-1/2 -translate-x-1/2 bg-gradient-to-r from-[#9F8DFC] to-[#56A6EC] text-white px-5 py-3 rounded-full text-[14px]">
+              <div className="absolute w-[120px] text-center -top-6 left-1/2 -translate-x-1/2 bg-gradient-to-r from-[#9F8DFC] to-[#56A6EC] text-white  py-3 rounded-full text-[14px]">
                 {plan.tag}
+               
               </div>
             )}
 
