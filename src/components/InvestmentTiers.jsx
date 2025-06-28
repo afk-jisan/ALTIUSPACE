@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { plans } from "../data/plan";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 export default function InvestmentTiers() {
   const [expandedIndex, setExpandedIndex] = useState(null);
 
@@ -9,9 +9,9 @@ export default function InvestmentTiers() {
   };
 
   return (
-    <section className="px-4 bg-[#EBE9E9] text-center py-20 sm:py-35">
+    <section className="px-4 bg-white text-center py-20 sm:py-35">
       <div className="mb-6 text-lg font-medium tracking-wide uppercase">
-        <div className="shadow-[0px_4px_4px_#00000040] font-kameron inline-block px-12 py-3 mb-3 bg-[linear-gradient(271.94deg,_rgba(101,78,177,0.74)_58.66%,_rgba(187,164,215,0.444)_117.97%)] rounded-[26px] text-[rgba(255,255,255,0.6)] backdrop-blur-[32px] font-bold text-xl sm:text-[40px] tracking-wider">
+        <div className="shadow-[0px_4px_4px_#00000040] font-kameron inline-block px-12 py-3 mb-3 bg-[linear-gradient(271.94deg,_rgba(101,78,177,0.74)_58.66%,_rgba(187,164,215,0.444)_117.97%)] rounded-[26px] text-white backdrop-blur-[32px] font-bold text-xl sm:text-[40px] tracking-wider">
           INVESTMENT TIERS
         </div>
       </div>
@@ -78,7 +78,7 @@ export default function InvestmentTiers() {
 
             <div className="flex flex-col gap-2 ">
               
-            <Link to="contact" duration={500} smooth={true} className="w-full flex justify-center py-4 relative cursor-pointer bg-[linear-gradient(-78deg,_rgba(187,164,215,0.6)_0%,_rgba(242,242,242,0.8)_100%)]  text-black rounded-[12px] hover:bg-gray-100 transition">
+            <Link to="/meeting" duration={500} smooth={true} className="w-full flex justify-center py-4 relative cursor-pointer bg-[linear-gradient(-78deg,_rgba(187,164,215,0.6)_0%,_rgba(242,242,242,0.8)_100%)]  text-black rounded-[12px] hover:bg-gray-100 transition">
                 <div className="absolute bg-[rgba(31,38,135,0.37)] inset-0 pointer-events-none z-0 blur-[24px] rounded-[12px] "></div>
                 <span className="relative z-10  font-semibold">Get Started</span>
               </Link>

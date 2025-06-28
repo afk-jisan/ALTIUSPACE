@@ -7,7 +7,7 @@ import Contact from "./Contact";
 import Pricing from "./Pricing";
 import Footer from "./Footer";
 import Navbar from "../components/Navbar";
-
+import FoundingMembers from "../components/FoundingMembers.jsx";
 function Home() {
   const sectionThemes = {
     hero: "dark",
@@ -32,11 +32,14 @@ function Home() {
       <Section id="service" setActiveSection={setActiveSection}>
         <Service />
       </Section>
+      
       <Section id="pricing" setActiveSection={setActiveSection}>
         <Pricing />
       </Section>
+      <Section id="founders" setActiveSection={setActiveSection}>
+        <FoundingMembers />
+      </Section>
       <Section id="contact" setActiveSection={setActiveSection}>
-      
         <Contact />
       </Section>
       
